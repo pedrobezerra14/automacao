@@ -1,11 +1,14 @@
 import pyautogui
 import time
 
+link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
+
 pyautogui.press("home")
-time.sleep(1)
 pyautogui.press("search")
-time.sleep(1)
 pyautogui.write("brave")
 time.sleep(1)
 pyautogui.press("enter")
-time.sleep(1)
+time.sleep(8)
+pyautogui.write(link)
+pyautogui.press("enter")
+time.sleep(3)
