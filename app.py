@@ -47,4 +47,5 @@ for linha in tabela.index:
         pyautogui.write(obs)
     pyautogui.press("tab")
     pyautogui.press("enter")
+    time.sleep(3)
     pyautogui.scroll(5000)
