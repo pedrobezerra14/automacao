@@ -26,4 +26,5 @@ time.sleep(1)
 
 tabela = pandas.read_csv("produtos.csv")
 
-print(tabela)
+for linha in tabela.index:
+    
