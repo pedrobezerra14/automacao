@@ -21,6 +21,7 @@ pyautogui.press("tab")
 time.sleep(0.5)
 pyautogui.write("password123")
 time.sleep(0.5)
+pyautogui.press("tab")
 pyautogui.press("enter")
 time.sleep(1)
 
@@ -43,3 +44,4 @@ for linha in tabela.index:
     pyautogui.press("tab")
     pyautogui.write("obs")
     pyautogui.press("tab")
+    pyautogui.press("enter")
