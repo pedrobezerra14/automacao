@@ -24,11 +24,9 @@ time.sleep(0.5)
 pyautogui.press("tab")
 pyautogui.press("enter")
 time.sleep(1)
-
 tabela = pandas.read_csv("produtos.csv")
-
 for linha in tabela.index:
-    pyautogui.press("tab")
+    pyautogui.click(x=501, y=280)
     time.sleep(0.5)
     pyautogui.write(tabela.loc[linha, "codigo"])
     pyautogui.press("tab")
@@ -43,8 +41,8 @@ for linha in tabela.index:
     pyautogui.write(str(tabela.loc[linha, "custo"]))
     pyautogui.press("tab")
     obs = tabela.loc[linha, "obs"]
-    if not pandas.isna():
-        pyautogui.write(obs)
+    if not pandas.isna(obs):
+        pyautogui.write(str(tabela.loc[linha, "obs"]))
     pyautogui.press("tab")
     pyautogui.press("enter")
     time.sleep(3)
