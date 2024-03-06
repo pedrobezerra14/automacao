@@ -1,5 +1,6 @@
 import pyautogui
 import time
+import pandas
 
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 
@@ -21,4 +22,4 @@ time.sleep(0.5)
 pyautogui.write("password123")
 time.sleep(0.5)
 pyautogui.press("enter")
-time.sleep(0.5)
+time.sleep(1)
