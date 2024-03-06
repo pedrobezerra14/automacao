@@ -42,7 +42,10 @@ for linha in tabela.index:
     pyautogui.press("tab")
     pyautogui.write(str(tabela.loc[linha, "custo"]))
     pyautogui.press("tab")
-    pyautogui.write(tabela.loc[linha, "obs"])
+    obs = tabela.loc[linha, "obs"]
+    if not tiver vazia:
+    pyautogui.write()
     pyautogui.press("tab")
+    
     pyautogui.press("enter")
     pyautogui.scroll(5000)
